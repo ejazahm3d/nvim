@@ -1,6 +1,10 @@
 return {
   -- add gruvbox
-  { "olimorris/onedarkpro.nvim" },
+  { "navarasu/onedark.nvim",
+    opts = {
+      style = 'warm'
+    }
+  },
   { "rebelot/kanagawa.nvim" },
   { "nyoom-engineering/oxocarbon.nvim" },
   { "ellisonleao/gruvbox.nvim" },
@@ -10,7 +14,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "github_dark",
+      colorscheme = "onedark",
     },
   },
 }
