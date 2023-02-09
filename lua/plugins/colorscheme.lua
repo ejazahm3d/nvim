@@ -1,10 +1,6 @@
 return {
   -- add gruvbox
-  { "navarasu/onedark.nvim",
-    opts = {
-      style = 'deep'
-    }
-  },
+  { "olimorris/onedarkpro.nvim" },
   { "rebelot/kanagawa.nvim" },
   { "nyoom-engineering/oxocarbon.nvim" },
   { "ellisonleao/gruvbox.nvim" },
