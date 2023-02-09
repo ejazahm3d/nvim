@@ -2,7 +2,7 @@ return {
   -- add gruvbox
   { "navarasu/onedark.nvim",
     opts = {
-      style = 'warm'
+      style = 'deep'
     }
   },
   { "rebelot/kanagawa.nvim" },
