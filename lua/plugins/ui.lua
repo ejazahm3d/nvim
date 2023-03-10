@@ -7,7 +7,6 @@ return {
   { 'olivercederborg/poimandres.nvim' },
   { 'projekt0n/github-nvim-theme' },
   { 'catppuccin/nvim' },
-  -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
