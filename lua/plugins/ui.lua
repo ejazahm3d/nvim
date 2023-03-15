@@ -37,9 +37,8 @@ return {
         numbers = "NONE",
         strings = "NONE",
         comments = "italic",
-        keywords = "bold,italic",
+        keywords = "bold",
         constants = "NONE",
-        functions = "italic",
         operators = "NONE",
         variables = "NONE",
         parameters = "NONE",
@@ -58,7 +57,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "onedark",
     },
   },
   {
@@ -140,7 +139,7 @@ return {
     keys = {
       { "<leader>bo", "<cmd>BufferLineCloseLeft<cr><cmd>BufferLineCloseRight<cr>", desc = "Close Others" },
       { "<leader>bh", "<cmd>BufferLineCloseLeft<cr>",                              desc = "Close Left" },
-      { "<leader>bh", "<cmd>BufferLineCloseRight<cr>",                             desc = "Close Right" },
+      { "<leader>bl", "<cmd>BufferLineCloseRight<cr>",                             desc = "Close Right" },
     }
   }
 }
