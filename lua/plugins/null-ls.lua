@@ -7,7 +7,6 @@ return {
 
     return {
       sources = {
-        -- nls.builtins.formatting.prettierd,
         nls.builtins.formatting.prettier.with({
           filetypes = {
             "javascript",
@@ -23,6 +22,21 @@ return {
             "md",
             "txt",
           },
+          extra_args = {
+            "--single-quote",
+          },
+        }),
+
+        nls.builtins.code_actions.eslint_d.with({
+          "javascript",
+          "typescript",
+          "typescriptreact",
+        }),
+
+        nls.builtins.diagnostics.eslint_d.with({
+          "javascript",
+          "typescript",
+          "typescriptreact",
         }),
       },
     }
