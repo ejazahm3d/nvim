@@ -56,6 +56,7 @@
   "oxocarbon.nvim": { "branch": "main", "commit": "84c8563d608b7ecbf7b4fd3b4828e1a087cb39d9" },
   "peek.nvim": { "branch": "master", "commit": "571f14c795e8edd5a21e435f42f37c9bec4a8e16" },
   "persistence.nvim": { "branch": "main", "commit": "c814fae5c37aa0aba9cd9da05df6e52b88d612c3" },
+  "playground": { "branch": "master", "commit": "4044b53c4d4fcd7a78eae20b8627f78ce7dc6f56" },
   "plenary.nvim": { "branch": "master", "commit": "253d34830709d690f013daf2853a9d21ad7accab" },
   "poimandres.nvim": { "branch": "main", "commit": "43ea31d1e19f7603697bb3272b233930d0292383" },
   "promise-async": { "branch": "main", "commit": "7fa127fa80e7d4d447e0e2c78e99af4355f4247b" },
