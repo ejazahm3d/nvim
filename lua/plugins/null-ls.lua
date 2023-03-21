@@ -22,9 +22,6 @@ return {
             "md",
             "txt",
           },
-          extra_args = {
-            "--single-quote",
-          },
         }),
 
         nls.builtins.code_actions.eslint_d.with({
