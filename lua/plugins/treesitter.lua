@@ -14,5 +14,5 @@ return {
         desc = "Toggle treesitter playground"
       }
     }
-  }
+  },
 }

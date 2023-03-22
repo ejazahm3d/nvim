@@ -9,6 +9,5 @@ return {
     config = function()
       require("octo").setup()
     end,
-    lazy = true,
   },
 }
