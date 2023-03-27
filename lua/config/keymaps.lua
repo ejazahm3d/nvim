@@ -13,3 +13,25 @@ vim.keymap.set(
     desc = 'Resume'
   }
 )
+
+vim.keymap.set(
+  "n",
+  "<C-d>",
+  "<C-d>zz",
+  {
+    noremap = true,
+    silent = true,
+    desc = 'Half Page Down'
+  }
+)
+
+vim.keymap.set(
+  "n",
+  "<C-u>",
+  "<C-u>zz",
+  {
+    noremap = true,
+    silent = true,
+    desc = 'Half Page Up'
+  }
+)
