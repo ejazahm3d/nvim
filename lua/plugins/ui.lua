@@ -31,6 +31,9 @@ return {
   {
     "olimorris/onedarkpro.nvim",
     opts = {
+      options = {
+        transparency = true
+      },
       styles = {
         types = "NONE",
         methods = "NONE",
@@ -141,5 +144,9 @@ return {
       { "<leader>bh", "<cmd>BufferLineCloseLeft<cr>",                              desc = "Close Left" },
       { "<leader>bl", "<cmd>BufferLineCloseRight<cr>",                             desc = "Close Right" },
     }
-  }
+  },
+  -- {
+  --   "xiyaowong/transparent.nvim",
+  --   lazy = false
+  -- }
 }
