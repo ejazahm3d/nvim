@@ -27,13 +27,12 @@ local handler = function(virtText, lnum, endLnum, width, truncate)
 end
 
 return {
-  -- add gruvbox
   {
     "olimorris/onedarkpro.nvim",
     opts = {
-      options = {
-        transparency = true
-      },
+      -- options = {
+      --   transparency = true
+      -- },
       styles = {
         types = "NONE",
         methods = "NONE",
@@ -50,13 +49,8 @@ return {
       },
     },
   },
-  { "rebelot/kanagawa.nvim" },
-  { "nyoom-engineering/oxocarbon.nvim" },
-  { "ellisonleao/gruvbox.nvim" },
-  { "olivercederborg/poimandres.nvim" },
-  { "projekt0n/github-nvim-theme" },
   { "catppuccin/nvim" },
-  { "rose-pine/neovim",                name = "rose-pine" },
+  { "rose-pine/neovim", name = "rose-pine" },
   {
     "LazyVim/LazyVim",
     opts = {
@@ -145,8 +139,4 @@ return {
       { "<leader>bl", "<cmd>BufferLineCloseRight<cr>",                             desc = "Close Right" },
     }
   },
-  -- {
-  --   "xiyaowong/transparent.nvim",
-  --   lazy = false
-  -- }
 }
