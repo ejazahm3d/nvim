@@ -13,4 +13,4 @@ vim.opt.foldlevelstart = 99                                    -- start with all
 vim.opt.foldcolumn = vim.fn.has "nvim-0.9" == 1 and "1" or nil -- show foldcolumn in nvim 0.9
 
 
-vim.opt.cursorlineopt = "number"
+-- vim.opt.cursorlineopt = "number"
