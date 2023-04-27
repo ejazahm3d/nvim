@@ -35,3 +35,14 @@ vim.keymap.set(
     desc = 'Half Page Up'
   }
 )
+
+vim.keymap.set(
+  "n",
+  "<leader>cp",
+  "<cmd>%!cat % | prettierd %<cr>",
+  {
+    noremap = true,
+    silent = true,
+    desc = 'Format with prettier'
+  }
+)
