@@ -58,23 +58,23 @@ return {
     },
   },
   {
+    "nvim-lualine/lualine.nvim",
+    event = "VeryLazy",
+    opts = {
+      sections = {
+        lualine_y = {
+          function()
+            local package_info = require("package-info")
+            return package_info.get_status()
+          end,
+        },
+      },
+    },
+  },
+  {
     "kevinhwang91/nvim-ufo",
     dependencies = {
       "kevinhwang91/promise-async",
-      {
-        "luukvbaal/statuscol.nvim",
-        config = function()
-          local builtin = require("statuscol.builtin")
-          require("statuscol").setup({
-            relculright = true,
-            segments = {
-              { text = { builtin.foldfunc }, click = "v:lua.ScFa" },
-              { text = { "%s" }, click = "v:lua.ScSa" },
-              { text = { builtin.lnumfunc, " " }, click = "v:lua.ScLa" },
-            },
-          })
-        end,
-      },
     },
     event = "VeryLazy",
     opts = {
