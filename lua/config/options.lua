@@ -17,10 +17,3 @@ vim.opt.foldcolumn = vim.fn.has("nvim-0.9") == 1 and "1" or nil -- show foldcolu
 vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 
 -- vim.opt.cursorlineopt = "number"
-
--- Never request typescript-language-server for formatting
-vim.lsp.buf.format({
-  filter = function(client)
-    return client.name ~= "tsserver"
-  end,
-})
