@@ -49,12 +49,11 @@ return {
       },
     },
   },
-  { "catppuccin/nvim" },
   { "rose-pine/neovim", name = "rose-pine" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark",
+      colorscheme = "catppuccin-macchiato",
     },
   },
   {
