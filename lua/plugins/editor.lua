@@ -1,5 +1,8 @@
 return {
   {
+    "christoomey/vim-tmux-navigator",
+  },
+  {
 
     "smjonas/duplicate.nvim",
     config = function()
