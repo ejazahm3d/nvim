@@ -49,6 +49,8 @@ return {
       },
     },
   },
+  { "sainnhe/gruvbox-material" },
+  { "rebelot/kanagawa.nvim" },
   { "rose-pine/neovim", name = "rose-pine" },
   {
     "LazyVim/LazyVim",

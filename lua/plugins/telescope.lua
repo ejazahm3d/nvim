@@ -1,3 +1,5 @@
+local Util = require("lazyvim.util")
+
 return {
   "nvim-telescope/telescope.nvim",
   opts = {
@@ -17,5 +19,12 @@ return {
         preview_cutoff = 120,
       },
     },
+  },
+  keys = {
+    { "<leader>ff", Util.telescope("files", { cwd = false }), desc = "Find files (all)", remap = true },
+    { "<leader><leader>", Util.telescope("files", { cwd = false }), desc = "Find files (all)", remap = true },
+    { "<leader>fF", Util.telescope("files"), desc = "Find files (cwd)", remap = true },
+    { "<leader>sg", Util.telescope("live_grep", { cwd = false }), desc = "Grep (root dir)" },
+    { "<leader>sG", Util.telescope("live_grep"), desc = "Grep (cwd)" },
   },
 }
