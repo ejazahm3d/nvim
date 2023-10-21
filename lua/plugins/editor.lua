@@ -42,4 +42,14 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {},
   },
+  {
+    "danymat/neogen",
+    dependencies = "nvim-treesitter/nvim-treesitter",
+    config = true,
+    keys = {
+      { "<leader>gd", "<cmd>Neogen<cr>", desc = "Generate docs" },
+    },
+    -- Uncomment next line if you want to follow only stable versions
+    -- version = "*"
+  },
 }
