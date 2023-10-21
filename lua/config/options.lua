@@ -9,11 +9,11 @@ end
 
 vim.opt.exrc = true
 
-vim.opt.foldenable = true -- enable fold for nvim-ufo
-vim.opt.foldlevel = 99 -- set high foldlevel for nvim-ufo
-vim.opt.foldlevelstart = 99 -- start with all code unfolded
-vim.opt.foldcolumn = vim.fn.has("nvim-0.9") == 1 and "1" or nil -- show foldcolumn in nvim 0.9
+-- vim.opt.foldenable = true -- enable fold for nvim-ufo
+-- vim.opt.foldlevel = 99 -- set high foldlevel for nvim-ufo
+-- vim.opt.foldlevelstart = 99 -- start with all code unfolded
+-- vim.opt.foldcolumn = vim.fn.has("nvim-0.9") == 1 and "1" or nil -- show foldcolumn in nvim 0.9
 
-vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+-- vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 
 -- vim.opt.cursorlineopt = "number"
