@@ -1,12 +1,15 @@
 return {
-  "neovim/nvim-lspconfig",
-  opts = {
-    servers = {
-      tsserver = {
-        root_dir = function(...)
-          return require("lspconfig.util").root_pattern(".git")(...)
-        end,
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        tsserver = {
+          root_dir = function(...)
+            return require("lspconfig.util").root_pattern(".git")(...)
+          end,
+        },
       },
     },
   },
+  { "dmmulroy/tsc.nvim", config = true },
 }
