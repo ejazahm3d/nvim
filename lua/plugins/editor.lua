@@ -1,5 +1,11 @@
 return {
   {
+    "carbon-steel/detour.nvim",
+    config = function()
+      vim.keymap.set("n", "<c-w><enter>", ":Detour<cr>")
+    end,
+  },
+  {
     "nvim-neo-tree/neo-tree.nvim",
     keys = {
       {
@@ -36,6 +42,10 @@ return {
   },
   {
     "rgroli/other.nvim",
+  },
+  {
+    "sindrets/diffview.nvim",
+    config = true,
   },
   {
     "ruifm/gitlinker.nvim",
