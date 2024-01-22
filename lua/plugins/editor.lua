@@ -1,11 +1,5 @@
 return {
   {
-    "carbon-steel/detour.nvim",
-    config = function()
-      vim.keymap.set("n", "<c-w><enter>", ":Detour<cr>")
-    end,
-  },
-  {
     "nvim-neo-tree/neo-tree.nvim",
     keys = {
       {
@@ -32,13 +26,6 @@ return {
       { "<C-k>", "<cmd>TmuxNavigateUp<cr>" },
       { "<C-l>", "<cmd>TmuxNavigateRight<cr>" },
     },
-  },
-  {
-
-    "smjonas/duplicate.nvim",
-    config = function()
-      require("duplicate").setup()
-    end,
   },
   {
     "rgroli/other.nvim",

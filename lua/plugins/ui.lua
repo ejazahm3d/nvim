@@ -49,13 +49,16 @@ return {
       },
     },
   },
+  { "Shatur/neovim-ayu" },
   { "sainnhe/gruvbox-material" },
   { "rebelot/kanagawa.nvim" },
   { "rose-pine/neovim", name = "rose-pine" },
+  { "ellisonleao/gruvbox.nvim", config = true },
+  { "projekt0n/github-nvim-theme" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-macchiato",
+      colorscheme = "rose-pine-moon",
     },
   },
   {
