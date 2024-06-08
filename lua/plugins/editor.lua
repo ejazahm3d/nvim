@@ -1,22 +1,13 @@
 return {
+
   {
-    "nvim-neo-tree/neo-tree.nvim",
-    keys = {
-      {
-        "<leader>ge",
-        function()
-          require("neo-tree.command").execute({ source = "git_status", toggle = true })
-        end,
-        desc = "Git explorer",
-      },
-      {
-        "<leader>be",
-        function()
-          require("neo-tree.command").execute({ source = "buffers", toggle = true })
-        end,
-        desc = "Buffer explorer",
-      },
-    },
+    "mrjones2014/smart-splits.nvim",
+    config = function()
+      vim.keymap.set("n", "<C-h>", require("smart-splits").move_cursor_left)
+      vim.keymap.set("n", "<C-j>", require("smart-splits").move_cursor_down)
+      vim.keymap.set("n", "<C-k>", require("smart-splits").move_cursor_up)
+      vim.keymap.set("n", "<C-l>", require("smart-splits").move_cursor_right)
+    end,
   },
   {
     "christoomey/vim-tmux-navigator",
@@ -38,18 +29,5 @@ return {
     "ruifm/gitlinker.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {},
-  },
-  {
-    "danymat/neogen",
-    dependencies = "nvim-treesitter/nvim-treesitter",
-    opts = {
-      enabled = true,
-      snippet_engine = "luasnip",
-    },
-    keys = {
-      { "<leader>cc", "<cmd>Neogen<cr>", desc = "Generate docs" },
-    },
-    -- Uncomment next line if you want to follow only stable versions
-    -- version = "*"
   },
 }
