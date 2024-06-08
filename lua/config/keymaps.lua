@@ -21,12 +21,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", {
   desc = "Half Page Up",
 })
 
-vim.keymap.set("n", "<leader>cp", "<cmd>%!cat % | prettierd %<cr>", {
-  noremap = true,
-  silent = true,
-  desc = "Format with prettier",
-})
-
 vim.keymap.set("n", "x", '"_x')
 vim.keymap.set("n", "c", '"_c')
 

@@ -3,9 +3,7 @@
 -- Add any additional options here
 --
 --
-if vim.fn.has("nvim-0.9") == 1 then
-  vim.opt.diffopt:append("linematch:60") -- enable linematch diff algorithm
-end
+vim.opt.diffopt:append("linematch:60") -- enable linematch diff algorithm
 
 vim.opt.exrc = true
 
